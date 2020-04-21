@@ -15,8 +15,8 @@ int main (int argc, char ** argv)
         find_text = argv[2];
     }
     printf ("Trying to find '%s' in '%s'\n", regex_text, find_text);
-    compile_regex (& r, regex_text);
-    match_regex (& r, find_text);
-    regfree (& r);
+    compile_regex(&r, regex_text);
+    match_regex(&r, find_text);
+    regfree(&r);
     return 0;
 }
